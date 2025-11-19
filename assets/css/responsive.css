@@ -1,0 +1,66 @@
+/* ======================================= */
+/*  Breakpoint oficial - 998px (notebook)  */
+/* ======================================= */
+@media (min-width: 998px) {
+  header {
+    padding: 4px 0 2px;
+  }
+
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* some o hamburger e mostra o menu sempre aberto */
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: block !important;
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .menu li a {
+    border-top: none;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+
+  /* GRID: em notebook/desktop */
+  .col-lg-3 {
+    grid-column: span 3; /* 4 cards lado a lado na seção "Destaques" */
+  }
+
+  .col-lg-6 {
+    grid-column: span 6; /* 2 cards grandes por linha na seção de notícias */
+  }
+
+  /* Footer: menu de um lado, ícones do outro, meio livre */
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-menu {
+    order: 1;
+  }
+
+  .footer-empty {
+    order: 2;
+    flex: 1;
+  }
+
+  .footer-social {
+    order: 3;
+  }
+}

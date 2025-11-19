@@ -1,13 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Home - SPFC | O Mais Querido</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/content.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
   </head>
+
   <body>
-    <h1>This is a simple HTML + CSS template!</h1>
+    <header class="spfc-header">
+      <div class="header--red">
+        <div class="contentr">
+          <div class="row links links--desktop">
+            <div class="links__seja_socio">
+              <a href="#" class="links__texto">Seja Sócio-Torcedor</a>
+            </div>
+            <div class="links__third_part">
+              <ul class="social-links">
+                <li class="social-links__item">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="social-links__item">
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li class="social-links__item">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="social-links__item">
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="social-links__item">
+                  <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+                <li class="social-links__item">
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row links links--mobile">
+            <div class="links__third_part">
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+              </ul>
+
+              <div class="links__group__logos_partners">
+                <a href="#" class="links__betano">
+                  <img src="./assets/img/logo_betano_30.webp" alt="" />
+                </a>
+                <a href="#" class="links__adidas">
+                  <img src="./assets/img/adidas.webp" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="links__texto_group">
+              <div class="links__seja_socio">
+                <a href="#" class="links__texto">Seja Sócio-Torcedor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-white">
+        <img
+          class="logo__image"
+          src="./assets/img/news/logo-spfc.png"
+          alt="Escudo do SPFC"
+        />
+      </div>
+
+      <!-- ⚫ FAIXA PRETA COM MENU -->
+      <div class="header--black">
+        <div class="container">
+          <div class="row">
+            <button type="button" class="menu__button">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <nav class="menu menu--close">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--active">
+                  <a href="#">Futebol</a>
+                </li>
+                <li class="menu__item"><a href="">Ingressos</a></li>
+                <li class="menu__item"><a href="">Sócio-Torcedor</a></li>
+                <li class="menu__item"><a href="">Basquete</a></li>
+                <li class="menu__item"><a href="">Olímpicos</a></li>
+                <li class="menu__item"><a href="">SPFC Prêmios</a></li>
+                <li class="menu__item"><a href="">Loja</a></li>
+                <li class="menu__item"><a href="">Clube</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container news">
+      <div class="row">
+        <div class="col col-sx-12 col-md-6 news__item">
+          <span class="news__header">
+            <h2 class="news__title">Futebol feminino</h2>
+            <a href="#" class="news__link">Veja todas as notícias</a>
+          </span>
+          <a href="#" class="news__banner">
+            <figure class="news__figure">
+              <img
+                class="news__image"
+                src="./assets/img/news/saopaulo-feminino.webp"
+                alt=""
+              />
+              <figcaption class="news__caption">
+                <span>Futebol feminino</span>
+                <div>
+                  <h3>
+                    Flamengo bate o Fluminense de virada e conquista o
+                    pentacampeonato da Taça Guanabara Feminina
+                  </h3>
+                  <p>
+                    Leidiane e Valéria Cantuário saíram do banco para marcar os
+                    gols da vitória rubro-negra por 2 a 1, nas Laranjeiras.
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col col-sx-12 col-md-6 news__item">
+          <span class="news__header">
+            <h2 class="news__title">Basquete</h2>
+            <a href="#" class="news__link">Veja todas as notícias</a>
+          </span>
+          <a href="#" class="news__banner">
+            <figure class="news__figure">
+              <img
+                class="news__image"
+                src="./assets/img/news/basquete.webp"
+                alt=""
+              />
+              <figcaption class="news__caption">
+                <span>Basquete</span>
+                <div>
+                  <h3>
+                    A temporada 2024/2025 se encerrou para o Basquete Tricolor
+                  </h3>
+                  <p>
+                    Com 41 jogos, o São Paulo terminou a primeira fase da
+                    competição em 13º lugar.
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sx-12 col-md-6 news__item">
+          <span class="news__header">
+            <h2 class="news__title">FUTEBOL MASCULINO</h2>
+            <a href="#" class="news__link">Veja todas as notícias</a>
+          </span>
+          <a href="#" class="news__banner">
+            <figure class="news__figure">
+              <img
+                class="news__image"
+                src="./assets/img/news/sao-paulo-masculino.webp"
+                alt=""
+              />
+              <figcaption class="news__caption">
+                <span>Institucional</span>
+                <div>
+                  <h3>
+                    Tricolor entra na reta final da preparação para o clássico
+                    com o Corinthians
+                  </h3>
+                  <p>
+                    Tricolor entrou na reta final de preparação nesta Data FIFA
+                    de olho no clássico com o Corinthians
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col col-sx-12 col-md-6 news__item">
+          <span class="news__header">
+            <h2 class="news__title">Vôlei</h2>
+            <a href="#" class="news__link">Veja todas as notícias</a>
+          </span>
+          <a href="#" class="news__banner">
+            <figure class="news__figure">
+              <img
+                class="news__image"
+                src="./assets/img/news/volei.webp"
+                alt=""
+              />
+              <figcaption class="news__caption">
+                <span>Vôlei</span>
+                <div>
+                  <h3>São Paulo/Barueri não evita derrota</h3>
+                  <p>
+                    O São Paulo/Barueri se ateve mais à estratégia de saque
+                    proposta pelo treinador José Roberto Guimarães e distribuiu
+                    melhor o seu ataque.
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="spfc-footer">
+      <section class="footer-top">
+        <div class="container">
+          <div class="row footer-top-row">
+            <!-- Patrocinador Máster -->
+            <div class="footer-top-col">
+              <h3>PATROCINADOR MÁSTER</h3>
+              <img
+                src="./assets/img/news/superbet.webp"
+                alt="Superbet - Patrocinador Máster"
+              />
+            </div>
+
+            <!-- Naming Rights -->
+            <div class="footer-top-col">
+              <h3>NAMING RIGHTS</h3>
+              <img
+                src="./assets/img/news/morumbis-2.webp"
+                alt="Morumbis - Naming Rights"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-links">
+        <div class="container">
+          <div class="row footer-links-row">
+            <div class="footer-links-col">
+              <h4>Home</h4>
+              <ul>
+                <li><a href="#">Loja SAO</a></li>
+                <li><a href="#">Comprar ingressos</a></li>
+                <li><a href="#">Seja Sócio Torcedor</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-col">
+              <h4>Acompanhe o Tricolor</h4>
+              <ul>
+                <li><a href="#">Notícias</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-col">
+              <h4>Institucional</h4>
+              <ul>
+                <li><a href="#">Sobre o São Paulo</a></li>
+                <li><a href="#">Presidência</a></li>
+                <li><a href="#">Diretoria</a></li>
+                <li><a href="#">Conselho</a></li>
+                <li><a href="#">Estatuto e Regimento</a></li>
+                <li><a href="#">Ouvidoria</a></li>
+                <li><a href="#">Transparência</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-col">
+              <h4>Estrutura</h4>
+              <ul>
+                <li><a href="#">Morumbis</a></li>
+                <li><a href="#">SuperCT</a></li>
+                <li><a href="#">CFA</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-col">
+              <h4>História</h4>
+              <ul>
+                <li><a href="#">Almanaque</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Calendário</a></li>
+                <li><a href="#">Conquistas</a></li>
+                <li><a href="#">Enciclopédia</a></li>
+                <li><a href="#">Fichário</a></li>
+                <li><a href="#">Símbolos</a></li>
+                <li><a href="#">Memorial</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-col">
+              <h4>Contato</h4>
+              <ul>
+                <li><a href="#">Fale conosco!</a></li>
+                <li><a href="#">Imprensa</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-copy">
+        <div class="container">
+          <p>Copyright 2025 © Todos os direitos reservados Osvaldo Cruz</p>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>

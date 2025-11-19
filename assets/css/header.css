@@ -1,0 +1,155 @@
+/* =============================
+   RESET BÁSICO (se já tiver em reset.css, pode remover daqui)
+============================= */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================
+   HEADER SPFC
+============================= */
+
+.spfc-header {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* 🔴 FAIXA VERMELHA (TOPO) */
+.header--red {
+  width: 100%;
+  background-color: #d2232a;
+  padding: 14px 0;
+  box-sizing: border-box;
+}
+
+/* Texto "Seja Sócio-Torcedor" */
+.links__texto {
+  color: #000;
+  font-weight: 900;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Ícones das redes sociais (pretos, em linha) */
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links li a {
+  color: #000;
+  font-size: 20px;
+}
+
+/* Grupo de logos (Betano/Adidas) – escondido por enquanto */
+.links__group__logos_partners {
+  display: none;
+}
+
+/* ⚪ FAIXA BRANCA (LOGO) */
+.header-white {
+  background-color: #fff;
+  width: 100%;
+  padding: 22px 0;
+  text-align: center;
+  border-bottom: 4px solid #d2232a;
+}
+
+.header-white .logo__image {
+  width: 95px;
+}
+
+/* ⚫ FAIXA PRETA (MENU PRINCIPAL) */
+.header--black {
+  background-color: #000;
+  padding: 14px 0;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item a {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu__item a:hover {
+  color: #d2232a;
+}
+
+/* =============================
+   VISIBILIDADE: DESKTOP / MOBILE
+============================= */
+
+/* MOBILE FIRST: mostra apenas links--mobile */
+.links--desktop {
+  display: none;
+}
+
+.links--mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* DESKTOP: mostra links--desktop e esconde links--mobile */
+@media (min-width: 769px) {
+  .links--desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .links--mobile {
+    display: none;
+  }
+}
+
+/* =============================
+   MENU MOBILE (HAMBÚRGUER)
+============================= */
+
+.menu__button {
+  display: none;
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 26px;
+}
+
+/* No mobile o botão aparece e o JS alterna menu--open / menu--close */
+@media (max-width: 768px) {
+  .menu__button {
+    display: block;
+  }
+
+  .menu--close {
+    display: none;
+  }
+
+  .menu--open {
+    display: block;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 12px;
+  }
+}
