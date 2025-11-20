@@ -121,9 +121,6 @@ body {
   }
 }
 
-/* =============================
-   MENU MOBILE (HAMBÚRGUER)
-============================= */
 
 .menu__button {
   display: none;
@@ -133,7 +130,6 @@ body {
   font-size: 26px;
 }
 
-/* No mobile o botão aparece e o JS alterna menu--open / menu--close */
 @media (max-width: 768px) {
   .menu__button {
     display: block;

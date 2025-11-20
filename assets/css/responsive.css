@@ -1,6 +1,3 @@
-/* ======================================= */
-/*  Breakpoint oficial - 998px (notebook)  */
-/* ======================================= */
 @media (min-width: 998px) {
   header {
     padding: 4px 0 2px;
@@ -37,11 +34,11 @@
 
   /* GRID: em notebook/desktop */
   .col-lg-3 {
-    grid-column: span 3; /* 4 cards lado a lado na seção "Destaques" */
+    grid-column: span 3;
   }
 
   .col-lg-6 {
-    grid-column: span 6; /* 2 cards grandes por linha na seção de notícias */
+    grid-column: span 6;
   }
 
   /* Footer: menu de um lado, ícones do outro, meio livre */
